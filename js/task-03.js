@@ -14,14 +14,16 @@ const images = [
 ];
 
 const galleryListEl = document.querySelector(".gallery");
+const galleryItemEl = document.querySelector("li");
+galleryListEl.style.display = "flex";
+galleryListEl.style.justifyContent = "space-between";
 
-const TotalingredientsListEl = [];
+const TotalGalleryListEl = [];
+// TotalGalleryListEl.style.display = "block";
 
-ingredients.forEach((item) => {
-  const ingredientsItemEl = document.createElement("li");
-  ingredientsItemEl.classList.add("item");
-  ingredientsItemEl.textContent = item;
-  TotalingredientsListEl.push(ingredientsItemEl);
+images.forEach((item) => {
+  const itemEl = `<li><img class='gallery__img' src='${item.url}' alt='${item.alt}' width='300'/></li>`;
+  TotalGalleryListEl.push(itemEl);
 });
 
-ingredientsListEl.append(...TotalingredientsListEl);
+galleryListEl.insertAdjacentHTML("afterbegin", TotalGalleryListEl);
