@@ -19,7 +19,6 @@ galleryListEl.style.display = "flex";
 galleryListEl.style.justifyContent = "space-between";
 
 const TotalGalleryListEl = [];
-// TotalGalleryListEl.style.display = "block";
 
 images.forEach((item) => {
   const itemEl = `<li><img class='gallery__img' src='${item.url}' alt='${item.alt}' width='300'/></li>`;
