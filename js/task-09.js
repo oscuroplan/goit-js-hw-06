@@ -4,11 +4,11 @@ function getRandomHexColor() {
 
 // находим кнопку, спан и body
 const btnChangeColorEl = document.querySelector("button.change-color");
-console.log(btnChangeColorEl);
+// console.log(btnChangeColorEl);
 const spanColorEl = document.querySelector("span.color");
-console.log(spanColorEl);
+// console.log(spanColorEl);
 const bodyEl = document.querySelector("body");
-console.log(bodyEl);
+// console.log(bodyEl);
 
 // отслеживаем событие и по клику вызываем функцию switchColor
 btnChangeColorEl.addEventListener("click", switchColor);
