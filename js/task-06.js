@@ -11,4 +11,4 @@ textInputEl.addEventListener("blur", (event) => {
   }
 });
 
-// event.currentTarget - элемент, на котором выполняется обработчик события.
+// event.currentTarget - свойство "currentTarget" на объекте события ссылвется на тот элемент, которые прослушивает это событие (в данном примере на "textInputEl")
